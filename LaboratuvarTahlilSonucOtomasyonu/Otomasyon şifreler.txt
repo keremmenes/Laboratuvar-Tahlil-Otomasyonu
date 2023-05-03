@@ -1,0 +1,13 @@
+Supervisor 
+kullancı adı : 12345678910
+parola : 1234
+
+
+Teknisyenler
+
+kullancı adları         şifreler
+12345678915             12345
+12345678917		6789
+12345678919	       	4567
+12345678920        	0000
+33333333333          	66666

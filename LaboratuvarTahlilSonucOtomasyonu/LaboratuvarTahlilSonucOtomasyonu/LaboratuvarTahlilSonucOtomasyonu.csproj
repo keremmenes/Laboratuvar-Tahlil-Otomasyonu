@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FDB4C2E-E499-4436-80EC-47616F98DFE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LaboratuvarTahlilSonucOtomasyonu</RootNamespace>
+    <AssemblyName>LaboratuvarTahlilSonucOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaBilgi.Designer.cs">
+      <DependentUpon>HastaBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratuvarOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaboratuvarOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ParolamıUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParolamıUnuttum.Designer.cs">
+      <DependentUpon>ParolamıUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParolaSıfırla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParolaSıfırla.Designer.cs">
+      <DependentUpon>ParolaSıfırla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParolaSıfırlaSuper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParolaSıfırlaSuper.Designer.cs">
+      <DependentUpon>ParolaSıfırlaSuper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sonuclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sonuclar.Designer.cs">
+      <DependentUpon>Sonuclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperGiris.Designer.cs">
+      <DependentUpon>SuperGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeknisBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeknisBilgi.Designer.cs">
+      <DependentUpon>TeknisBilgi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaBilgi.resx">
+      <DependentUpon>HastaBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParolamıUnuttum.resx">
+      <DependentUpon>ParolamıUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParolaSıfırla.resx">
+      <DependentUpon>ParolaSıfırla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParolaSıfırlaSuper.resx">
+      <DependentUpon>ParolaSıfırlaSuper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sonuclar.resx">
+      <DependentUpon>Sonuclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperGiris.resx">
+      <DependentUpon>SuperGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeknisBilgi.resx">
+      <DependentUpon>TeknisBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LaboratuvarOtomasyonDataSet.xsc">
+      <DependentUpon>LaboratuvarOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LaboratuvarOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LaboratuvarOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LaboratuvarOtomasyonDataSet.xss">
+      <DependentUpon>LaboratuvarOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
